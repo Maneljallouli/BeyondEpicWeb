@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+ 
+    <title>BeyondEpicWeb - Développement Web Professionnel</title>
+  <title>Recrutement - BeyondEpicWeb</title>
+  <link rel="stylesheet" href="recrutement.css">
+  	<link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Header Principal -->
+  <header class="main-header">
+    <div class="header-overlay">
+      <div class="header-content">
+	  <nav>
+        <ul>
+          <li><a href="index.html" class="index-link">Accueil</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#references">Références</a></li>
+           <li><a href="https://www.pappers.fr/entreprise/jallouli-bilel-983467937" target="_blank">Blog</a></li> <!-- Lien redirigeant vers l'URL externe -->
+          <li><a href="recrutement.html" class="recrutement-link">Recrutement</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+        <h1>Rejoignez l'Experience BeyondEpicWeb</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section Recrutement -->
+  <section id="recrutement">
+    <div class="recrutement-intro">
+      <h2>Candidature spontanée</h2>
+      <p>Pour tout dépôt de candidature spontanée, veuillez remplir le formulaire ci-dessous. Aucune candidature déposée sur nos adresses mail ne sera retenue.</p>
+    </div>
+
+    <!-- Formulaire de Recrutement -->
+    <div class="form-container">
+      <form action="submit_candidature.php" method="post" enctype="multipart/form-data">
+        <!-- Champ Prénom -->
+        <label for="prenom">Prénom <span class="required">*</span></label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <!-- Champ Nom -->
+        <label for="nom">Nom <span class="required">*</span></label>
+        <input type="text" id="nom" name="nom" required>
+
+        <!-- Champ Email -->
+        <label for="email">Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Champ Téléphone -->
+        <label for="telephone">Téléphone <span class="required">*</span></label>
+        <input type="tel" id="telephone" name="telephone" required>
+
+        <!-- Champ Joindre CV -->
+        <label for="cv">Joindre CV <span class="required">*</span></label>
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+        <!-- Champ Joindre Lettre de Motivation -->
+        <label for="lettre_motivation">Joindre Lettre de Motivation <span class="required">*</span></label>
+        <input type="file" id="lettre_motivation" name="lettre_motivation" accept=".pdf,.doc,.docx" required>
+
+        <!-- Champ Profil LinkedIn (Optionnel) -->
+        <label for="linkedin">Profil LinkedIn</label>
+        <input type="url" id="linkedin" name="linkedin" placeholder="https://www.linkedin.com/in/votreprofil">
+
+        <!-- Bouton Envoyer -->
+        <button type="submit">Envoyer ma candidature</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
